@@ -1,0 +1,16 @@
+<nav class="navbar navbar-expand-sm navbar-dark mb-2 bg-dark pl-1 pr-1">
+        <a class="navbar-brand" routerLink="/home">SP Angular</a>
+        <button class="navbar-toggler" type="button" (click)="toggleCollapse()" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" [collapse]="isCollapsed" id="navbarNav">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item" routerLinkActive="active">
+                    <a class="nav-link" routerLink="/home">Home (Display Profile)</a>
+                </li>
+            </ul>
+            <span class="navbar-text">
+                Signed in as {{ userProfile.DisplayName }}
+            </span>
+        </div>
+</nav>
